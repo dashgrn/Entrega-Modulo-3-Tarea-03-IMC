@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora IMC</title>
+    <!-- bulma css framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="is-align-items-center">
+        <form class="box mx-6 my-6 has-background-white-ter">
+            <!-- header -->
+            <section class="hero is-small is-info is-align-items-center">
+                <div class="hero-body">
+                    <p class="title has-text-weight-bold">
+                        Calculadora de IMC
+                    </p>
+                </div>
+            </section>
+            <p class="p-1 has-text-centered has-text-grey-light">Descubra su índice de masa corporal</p>
+
+            <!-- gender select -->
+            <div class="field m-0">
+                <label class="label">Genero</label> <span class="is-justify-content-center is-flex">
+                    <img class="image is-64x64" src="https://image.flaticon.com/icons/png/512/10/10522.png" alt="">
+                    <img class="image is-64x64" src="https://image.flaticon.com/icons/png/512/103/103277.png" alt="">
+                </span>
+            </div>
+
+
+            <!-- input fields -->
+            <div class="field pt-2">
+                <label class="label" for="ageInput">Edad</label>
+                <div class="control">
+                    <input name="ageInput" id="ageInput" min="1" class="input" type="number" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="weightInput">Peso</label>
+                <div class="control">
+                    <input name="weightInput" id="weightInput" class="input" type="number" min="1" placeholder="En KG"
+                        required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="heightInput">Estatura</label>
+                <div class="control">
+                    <input name="heightInput" id="heightInput" class="input" type="text" min="1" placeholder="En metros"
+                        required>
+                </div>
+            </div>
+
+            <!-- btn Calc -->
+            <button class="button is-info is-rounded">Calcular IMC</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
